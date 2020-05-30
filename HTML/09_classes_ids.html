@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classes & Ids</title>
+    <style>
+        .card{
+            border:1px solid #ccc;
+            background: #f4f4f4;
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+        .enhance{
+            background-color: yellow;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <!--  One class can be assigned to multiple tags but 
+            every tag has its unique id -->
+
+            <!-- Div is a block level element
+                span is an inline element -->
+    <div id="main-header" class="card">
+        <h1>My website</h1>
+        <p>A site about me</p>
+    </div>
+    <ul id="main-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+
+    <div id="about" class="card">
+        <h3>About</h3>
+        <p>Lorem ipsum <span class="enhance">dolor sit amet consectetur adipisicing</span> elit. Voluptatibus excepturi doloribus vero. Id libero eaque illo consequuntur? Assumenda ut magni, excepturi qui aliquam 
+           <div class="enhance">perspiciatis nam dolore sed</div>  quae? Et, voluptas?</p>
+
+    </div>
+
+    <div id="contact">
+        <h3>Contact me</h3>
+        <ul>
+            <li>Address :xyz</li>
+            <li>Phone : 99xxxxxxx</li>
+            <li>Email: assas@cool.com</li>
+        </ul>
+    </div>
+
+    <footer>
+        Coypright&copy;
+    </footer>
+</body>
+</html>
