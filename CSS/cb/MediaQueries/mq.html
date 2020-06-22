@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #samplediv{
+        height: 300px;
+        background-color:lime;
+        width: 300px;
+    }
+/* media means the device or browser we r using */
+    @media(max-width: 1500px){
+        #samplediv{
+            background-color: magenta;
+        }
+    }
+
+    @media(max-width: 750px){
+        #samplediv{
+            background-color:maroon;
+        }
+    }
+    @media(max-width: 500px){
+        #samplediv{
+            background-color: black;
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="samplediv"></div>
+</body>
+</html>

@@ -1,0 +1,14 @@
+div{
+    background-color: pink;
+    color: black;
+    height: 70px;
+    width: 70px;
+    margin-left: 30px;
+    transform: translate();
+}
+
+#transform{
+    margin-left: 30px;
+    background-color: powderblue;
+    transform: skew(30deg);
+}

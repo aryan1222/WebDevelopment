@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    div{
+        margin-top: 10px;
+        background-color: blueviolet;
+        height: 60px;
+        width: 60px;
+    }
+
+    #div3{
+        background-color: chartreuse;
+        height: 100px;
+    }
+
+    #div1:hover{
+        background-color: coral;
+
+        height: 40px;
+        transition: height 2s,background 1s;
+    }
+    @keyframes slide{
+        from{
+            margin-left: 10px;
+        }
+        to{
+            margin-left: 200px;
+        }
+    }
+
+    div:hover +div{
+        height: 10px;
+        animation-name: slide;
+        animation-duration: 10s;
+        animation-iteration-count: 10;
+    }
+
+    </style>
+</head>
+<body>
+    <div id="div1"></div>
+    
+    <div id="div2"></div>
+
+    <div id="div3"></div>
+    <div id="div4"></div>
+</body>
+</html>
