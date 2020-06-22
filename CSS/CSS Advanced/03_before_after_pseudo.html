@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoSelectors-Before and After</title>
+    <style>
+        .is-required::after{
+            content: '*';
+            color: red;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .is-required::before{
+            content: '#';
+            color: #0000ff;
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #333;
+            font-size: 20px; 
+            color: #fff;
+            margin: 0;
+        }
+
+        header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+
+            /* background: url('./img/photo-1.jpg') no-repeat center center/cover;
+            opacity: 0.4; */
+        }
+
+        header::before{
+            content: '';
+            background: url('./img/photo-1.jpg') no-repeat center center/cover;
+            opacity: 0.6;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+        header h1{
+            font-size: 4rem;
+            margin: 1rem;
+        }
+
+        /* The practical use of ::before is to do an overlay (image overlay) */
+    </style>
+</head>
+<body>
+    <div>
+        <label class="is-required" for="name">Name</label>
+        <input type="text">
+    </div>
+
+    <header>
+        <h1>Hello World</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, dolorem.</p>
+    </header>
+
+    <section>
+        <h3>Lorem, ipsum dolor.</h3>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates nostrum illo error sunt corrupti ratione modi sed tenetur doloribus. Pariatur ipsam ratione illo deleniti? Magnam eum aspernatur ea explicabo voluptatem, voluptas ex est repudiandae possimus ab dicta! Ut ipsum harum distinctio optio consectetur blanditiis dignissimos eligendi, hic impedit maxime quibusdam?</p>
+    </section>
+</body>
+</html>

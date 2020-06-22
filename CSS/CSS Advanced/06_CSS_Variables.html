@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Variables</title>
+    <style>
+        :root{
+            --max-width: 1100px;
+            --light: #fff;
+            --primary-color: steelblue;
+            --secondary-color: skyblue;
+
+            --box-1-width: 1;
+            --box-2-width: 3;
+        }
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.4;
+            background: #f4f4f4;
+        }
+
+        header{
+            color: var(--light);
+            background: var(--primary-color);
+            text-align: center;
+            border-bottom: 10px solid var(--secondary-color);
+        }
+
+        .container{
+            display: flex;
+            margin: auto;
+            max-width: var(--max-width);
+        }
+
+        .box{
+            color: var(--light);
+            background: var(--primary-color);
+            border: 10px solid var(--secondary-color);
+            margin: 20px;
+            padding: 10px;
+        }
+
+        #box-1{ flex: var(--box-1-width); }
+        
+        #box-2{ flex: var(--box-2-width); }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Variables</h1>
+    </header>
+
+    <div class="container">
+        <!-- .box#box-$*2 -->
+        <div class="box" id="box-1">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Provident distinctio consequatur accusamus magnam optio explicabo hic error, a incidunt molestiae temporibus, illo facilis dicta unde voluptates et impedit dignissimos nesciunt!</p>
+        </div>
+        <div class="box" id="box-2">
+            <h3>Heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate reiciendis libero odio optio quasi harum, quisquam omnis sint quia consequatur alias consequuntur quas iure ipsum ullam nam magni itaque nemo.</p>
+        </div>
+    </div>
+    
+</body>
+</html>

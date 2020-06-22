@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadows</title>
+    <style>
+        .container{
+            display: flex;
+            margin-top: 30px;
+        }
+
+        .box{
+            margin: 1rem;
+            padding: 1rem;
+
+            background: coral;
+            color: white;
+        }
+
+        .shadow-1{
+            /* offset-x | offset-y | color */
+            box-shadow: 10px 10px teal;            
+        }
+
+        .shadow-2{
+            /* offset-x | offset-y | blur-radius | color */
+            box-shadow: 10px 10px 20px teal;
+        }
+        
+        .shadow-3{
+            /* Negative Values */
+            box-shadow: -5px -5px 20px teal;
+        }
+        
+        .shadow-4{
+            /* offset-x | offset-y | blur-radius | spread-radius */
+            box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5);
+            /* this shadow is preferred more */
+        }
+
+        .shadow-5{
+            /* inset | offset-x | offset-y | color */
+            box-shadow: inset 3px 3px teal;
+            /* inset means shadow is not coming outside the box */
+        }
+
+        .shadow-6{
+            /* Multiple shadows */
+            box-shadow: 3px 3px teal, -3px -3px black, -10px -10px 20px teal, 10px 10px 20px black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box shadow-1">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-1">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-1">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="box shadow-2">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-2">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-2">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box shadow-3">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-3">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-3">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box shadow-4">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-4">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-4">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box shadow-5">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-5">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-5">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box shadow-6">
+            <h3>Box1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-6">
+            <h3>Box2</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+        <div class="box shadow-6">
+            <h3>Box3</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Necessitatibus dolores sapiente consequatur quasi eveniet veniam quia itaque molestias temporibus iusto!</p>
+        </div>
+    </div>
+</body>
+</html>

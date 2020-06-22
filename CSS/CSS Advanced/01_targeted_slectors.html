@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Targeted Selectors</title>
+    <style>
+        /* All <p> inside <div> */
+        div p{
+            background: #ddd;
+        }
+
+        /* Direct children p of div only  */
+        div > p {
+            background: red;
+        }
+
+        /* DIrectly after i.e tags on the same level (Siblings) */
+        div + p{
+            background-color: yellowgreen;
+        }
+
+        /* Styling with attributes */
+        a[target]{
+            color: #ffffff;
+            background-color: #0000ff;
+        }
+        a[target="_self"]{
+            color: #000;
+        }
+
+
+        form{
+            width: 25%;
+        }
+        /* Specific Attributes Values */
+        input[type='text'],
+        input[type='email']{
+            width: 100%;
+            margin: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste, minus?</p>
+
+        <ul>
+            <!-- li{Item $}*3   SHortcut -->
+            <li>item 1</li>
+            <li><p>item 2</p> </li>
+            <li>item 3</li>
+        </ul>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, atque!</p>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet.</p>
+
+    <a href="#">Page1</a>
+    <a href="#" target="_self">Page2</a>
+    <a href="http://google.com" target="_blank">Go to Google</a>  <!-- _blank opens google in a new tab -->
+
+
+    <br>
+    <form>
+        <input type="text" placeholder="name">
+        <input type="email" placeholder="Email">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
