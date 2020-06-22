@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* Body Styling */
+        body{
+            padding: 50px;
+        }
+
+        /* # is for ids
+            . is for classes */
+
+            /* Element Selector */
+        p{
+            color: green;
+        }
+
+        #main-heading{
+            font-size: 100px;
+            font-weight: bolder;
+        }
+
+        .sub-headings{
+            color: chartreuse;
+        }
+
+        #welcome{
+            border:1px solid lawngreen;
+            border-radius: 10px;
+            background-color: ivory;
+        }
+
+        /* Multiple Selectors */
+        #welcome,#About1,#About2{
+            padding: 10px;
+            background-color: honeydew;
+        }
+        
+        /* Nested Selectors */
+        #welcome p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="welcome">
+        <h1 id="main-heading">Heading1</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, minus aliquam neque facere blanditiis libero quibusdam totam non. Aliquid, libero.</p>
+    </div>
+    <div id="About1">
+        <h2 class="sub-headings">Heading2</h2>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit modi facere reiciendis molestiae quibusdam totam fugit magni blanditiis velit corporis.</p>
+    </div>
+    <div id="About2">
+        <h2 class="sub-headings">Heading3</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora enim tempore consequuntur veritatis modi odit! Quo aliquam quas eos fuga.</p>
+    </div>
+</body>
+</html>

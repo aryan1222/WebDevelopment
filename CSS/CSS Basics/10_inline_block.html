@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inline & Block</title>
+    <style>
+        li{
+            /* float: left;
+            list-style:none; */
+            display: inline;
+        }
+        img{
+            display: block;
+            margin: auto;
+        }
+        .box{
+            display: inline-block;
+            background-color: lightgrey;
+            border: lightslategrey 1px solid;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- ul and li are block elements -->
+    <ul>
+        <li>one</li>  
+        <li>two</li>
+        <li>three</li>
+    </ul>
+    <br>
+    <!-- img is inline element  -->
+    <img src="./img/leaf.png" alt="myimage">
+    
+    <!-- div is also a block element -->
+    <div class="box box-1">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error ducimus quas earum et pariatur voluptatibus beatae nostrum laudantium aspernatur.</p>
+    </div>
+
+    <div class="box box-2">
+        <h3>Box Two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error ducimus quas earum et pariatur voluptatibus beatae nostrum laudantium aspernatur.</p>
+    </div>    
+
+    <div class="box box-3">
+        <h3>Box Three</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum error ducimus quas earum et pariatur voluptatibus beatae nostrum laudantium aspernatur.</p>
+    </div>
+    
+</body>
+</html>

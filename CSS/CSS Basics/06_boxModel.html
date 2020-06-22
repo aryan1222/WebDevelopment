@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX Model</title>
+    <style>
+        /* Browser reset default Css */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            color: white;
+            background-color: #000;
+            border: 2px solid red;
+
+            /* width of the box */
+            width: 500px;
+
+
+        /* PADDING */
+            /* padding on all sides */
+            padding: 20px;
+
+            /* Padding per side */
+            padding-top: 20px;
+            padding-right: 10px;
+            padding-bottom: 20px;
+            padding-left: 10px;
+            /* The properties below will override the properties up */
+            /* Padding shorthand =top,right,bottom,left */
+            padding:20px 10px 20px 10px;
+            /* Padding shorthand= top/bottom left/right */
+            padding: 20px 10px;
+            
+
+        /* MARGIN */
+            /* margin on all sides */
+            margin:50px;
+            /* Margin per side */
+            margin-top: 20px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            margin-left: 10px;
+            /* The properties below will override the properties up */
+            /* Margin shorthand =top,right,bottom,left */
+            Margin:20px 10px 20px 10px;
+            /* Margin shorthand= top/bottom left/right */
+            margin: 20px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h3>Box One</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus necessitatibus expedita inventore fuga in nostrum tenetur voluptatum! Odio voluptatem culpa quae, amet saepe fuga doloremque veniam hic tempore. Neque praesentium enim iste facere eligendi modi, nisi tempore accusantium odio nam dolor, ullam dignissimos amet magnam non deleniti quia omnis nesciunt.</p>
+    </div>
+    <div class="box">
+        <h3>Box Two</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nemo maiores ipsa laboriosam cum sunt consequatur veritatis eveniet rerum libero!</p>
+    </div>
+</body>
+</html>
+
+<!-- By default browser also has some margin and padding -->
