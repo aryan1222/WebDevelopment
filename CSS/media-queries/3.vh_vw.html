@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vh & Vw units</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header{
+            background: #333 url('https://source.unsplash.com/daily') no-repeat center center/cover;
+            /* an image on top of a #333 color */
+            color: #ffffff;
+            /* 100% will not cover the full viewport */
+            /* height: 100%; */
+            /* but 100vh will cover full height of viewport */
+            height: 100vh;
+            text-align: center;
+            padding: 2rem;
+            padding-top: 15rem;
+        }
+        header h1{
+            font-size: 3rem;
+        }
+        header p{
+            margin: 1rem 0;
+        }
+        .btn{
+            display: inline-block;
+            text-decoration: none;
+            background: #ffffff;
+            color: #333;
+            padding: 1rem 2rem;
+        }
+
+        @media(max-width: 500px){
+            header{
+                padding-top: 5rem;
+            }
+            header h1{
+                font-size: 2rem;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our website</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, magnam cum accusantium quae corporis numquam vel maxime tempora at ab omnis. Qui rerum natus quibusdam quam eveniet ratione sed odit, et eius facere ab adipisci quidem eligendi dolorum repellendus libero incidunt architecto. Placeat commodi nesciunt, quis tempora temporibus odit ut.</p>
+        <a href="#" class="btn">Find out more</a>
+    </header>
+
+    <section>
+        <h1>About</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat ipsam, eos ipsa cum vitae ex libero placeat minima quidem illo praesentium architecto sed veniam quod natus soluta reprehenderit neque quis tenetur est. Magnam excepturi eius incidunt vitae harum quasi modi minus, autem magni exercitationem minima dignissimos repellat animi sit consequatur accusamus nihil non at dolores ipsam facere. Iste atque illo rerum vero, perspiciatis distinctio temporibus praesentium, libero, ullam dolor quasi nisi. Ab explicabo voluptatem eos nam odio, nostrum cum nobis repellat mollitia repudiandae quas deserunt, quae esse similique harum deleniti, quos consequuntur accusamus quis ullam ipsam minus eaque tempore</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus iste quod, nihil aut accusantium laborum voluptates harum, atque at doloribus similique libero modi optio enim non dolores nam magnam quaerat repudiandae. Beatae impedit consectetur, repellat adipisci earum mollitia pariatur a iste, accusantium itaque modi ea. Perspiciatis, sunt ipsam. Saepe ratione porro non ipsam minus repudiandae illum, reiciendis qui totam minima doloribus ducimus voluptas provident veniam maiores. Harum libero debitis dolorum non alias consequuntur enim, iste maiores saepe dolore accusamus. Atque facere suscipit dolorem, sit quo voluptate earum totam possimus enim exercitationem quam dicta minus asperiores fugiat repudiandae, voluptatibus tenetur aliquid nostrum? Quis ullam eveniet corrupti nostrum numquam quidem veritatis asperiores minima ab rem, hic culpa eius animi voluptates quos assumenda ipsam in inventore tempora amet sed. Beatae consequatur, voluptas ab officia iure ipsam facere esse perferendis error delectus, quia mollitia aliquam provident maxime, corporis minus quis rerum dolore ducimus eum obcaecati amet distinctio. Tenetur, cumque illum in, ipsum sapiente quo voluptates aliquid sit ex vero nostrum nesciunt dolore dolorum temporibus ipsam animi et rerum dolorem rem dolores molestias? Ratione natus quo, praesentium debitis perferendis autem! Cupiditate voluptatum temporibus illo placeat commodi aperiam neque voluptates voluptatibus nihil sunt? Reiciendis, quam autem.</p>
+    </section>
+</body>
+</html>

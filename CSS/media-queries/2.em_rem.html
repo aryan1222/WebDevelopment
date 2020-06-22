@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Em & Rem</title>
+</head>
+<style>
+    #box-1{
+        font-size: 20px;
+    }
+    #box-1 p{
+        font-size: 1.5em;
+        padding: 1em; 
+        /* !st disadvantage of using em */
+    }
+    #box-1 ul{
+        font-size: 1.5em;
+        /* 2nd disadvantage of using em */
+    }
+
+
+    /* TO overcome these disadvantages we use rem unit */
+    /* Root element */
+    html{
+        /* default size */
+        font-size: 16px;
+
+        /* size = 10px */
+        /* font-size: 62.5%; */
+    }
+  
+    #box-2 p{
+        /* rem value = 16px times the value
+                16px is font-size of root element i.e <html> */
+        font-size: 1.5 rem;  
+        padding: 1 rem;
+    }
+    #box-2 ul{
+        font-size: 1.5 rem;
+    }
+</style>
+
+<body>
+    <div id="box-1">
+        <h3>Box one</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis nobis tempora vitae provident autem magni commodi placeat ut, quidem adipisci!</p>
+        <ul>
+            <!-- Use li{$}*3 shortcut -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="box-2">
+        <h3>Box two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere aliquam inventore officiis magnam veniam illum expedita porro fuga dolores!</p>
+        <ul>
+            <!-- Use li{$}*3 shortcut -->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </ul>
+    </div>
+    <div id="box-2">
+        <h3>Box two</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere aliquam inventore officiis magnam veniam illum expedita porro fuga dolores!</p>
+    </div>
+</body>
+</html>
